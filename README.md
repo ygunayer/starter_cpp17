@@ -34,5 +34,18 @@ $ .\bin\starter_cpp17.exe
 Hello, world!
 ```
 
+## Adding and Installing Dependencies
+You can use `vcpkg add port ...` to add dependencies.
+
+```bash
+$ vcpkg add wxwidgets
+```
+
+Then, add the `find_package(...)` and `target_link_libraries` directives to your `CMakeLists.txt` file and run Ninja to compile your program. This should install the dependencies automatically and rebuild the project.
+
+```bash
+$ ninja
+```
+
 ## License
 MIT
