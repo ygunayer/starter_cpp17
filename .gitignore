@@ -11,6 +11,12 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 
+# CMake Builds & Ninja
+/build
+build.ninja
+.ninja_deps
+.ninja_log
+
 # vcpkg
 vcpkg_installed
 vcpkg-manifest-install.log
