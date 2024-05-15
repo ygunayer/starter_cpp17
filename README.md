@@ -1,5 +1,5 @@
-# Starter: C++17
-This is a starter project for creating C++17 projects using CMake, Ninja and vcpkg
+# Template: C++17
+This is a template project for creating C++17 projects using CMake, Ninja and vcpkg
 
 ## Prerequisites
 You must have the following installed on your machine:
@@ -26,11 +26,11 @@ You can now run the compiled binary.
 
 ```bash
 # On UNIX
-$ ./bin/starter_cpp17
+$ ./bin/template_cpp17
 Hello, world!
 
 # On Windows
-$ .\bin\starter_cpp17.exe
+$ .\bin\template_cpp17.exe
 Hello, world!
 ```
 
