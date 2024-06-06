@@ -1,6 +1,49 @@
 # Template: C++17
 This is a template project for creating C++17 projects using CMake and vcpkg
 
+## How to Use This Template
+### Cloning the Repository
+#### Option 1: Using GitHub
+First, you can click on the [Use This Template button](https://github.com/new?template_name=template_cpp17&template_owner=ygunayer) to create a new GitHub repository based on this template. Then you can simply clone your repository and get to working
+
+#### Option 2: Cloning Manually
+Alternatively, you can just clone this repository locally and get to work immediately. This option allows you to make the decision to make a new Git repository at a later time at your own leisure.
+
+```bash
+$ git clone https://github.com/ygunayer/template_cpp17 <some project name>
+```
+
+Later, when you'd like to create your own Git repository from this code, simply erase the entire Git history, create an initial commit, and add the remote URL for your repo. Feel free to customize any of the commands below:
+
+```bash
+# erase git history and start from scratch
+$ rm -rf .git && \
+  git init
+
+# create a new intial commit
+$ git add . && \
+  git commit -m "Initial commit"
+
+# add the remote url and push to the main branch
+$ git remote add origin <your remote repo url> && \
+  git push -u origin main
+```
+
+### Renaming the Project
+Once a new codebase is created off this template, simply rename the project in the CMakeLists.txt file.
+
+**CMakeLists.txt**
+```diff
+...
+
+# Rename `template_cpp17` to your project name (e.g. `my_project`)
+-project(template_cpp17 LANGUAGES CXX)
++project(my_project LANGUAGES CXX)
+
+set(CXX_STANDARD 17)
+...
+```
+
 ## Prerequisites
 You must have the following installed on your machine:
 
@@ -66,11 +109,11 @@ $ cmake --build build/
 You can now run the compiled binary.
 
 ```bash
-# On UNIX
+# On UNIX -- replace `template_cpp17` with your project name (e.g. `my_project`)
 $ ./bin/template_cpp17
 Hello, world!
 
-# On Windows
+# On Windows -- replace `template_cpp17` with your project name (e.g. `my_project`)
 $ .\bin\template_cpp17.exe
 Hello, world!
 ```
